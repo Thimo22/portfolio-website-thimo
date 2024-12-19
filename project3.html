@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website Thimo</title>
+  <link href="css/style.css" rel="stylesheet">
+  
+</head>
+<body>
+
+  <!-- Navigation Container -->
+  <nav id="nav" class="nav-container">
+    <!-- Navigation Links -->
+    <ul class="nav-content">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="contact.html">CONTACT</a>
+    </ul>
+
+    <svg viewBox="0 0 1920 601" preserveAspectRatio="none">
+        <!-- Background Path (No Stroke) -->
+        <path d="M2.5 2.5H1917.5V297.336C1916.79 297.292 1915.94 297.239 1914.96 297.18C1911.54 296.974 1906.52 296.682 1900.04 296.336C1887.09 295.644 1868.36 294.737 1845.23 293.876C1798.95 292.155 1735.04 290.617 1664.5 291.353C1523.52 292.825 1355.65 303.376 1249.19 339.885C1168.73 367.479 1134.57 429.058 1103.72 484.677C1102.36 487.13 1101 489.573 1099.65 492C1083.59 520.826 1068 547.414 1046.74 566.723C1025.61 585.918 998.779 597.992 960.032 597.5C921.272 597.008 894.583 584.44 873.668 565.052C852.635 545.555 837.351 519.087 821.606 490.51C820.409 488.336 819.209 486.151 818.004 483.957C787.639 428.654 754.115 367.597 673.311 339.885C566.854 303.376 398.352 292.825 256.754 291.353C185.895 290.617 121.673 292.155 75.1648 293.876C51.91 294.737 33.0822 295.644 20.066 296.336C13.5579 296.682 8.50252 296.974 5.073 297.18C4.07672 297.24 3.21763 297.292 2.5 297.337V2.5Z" 
+              fill="#19C3BF" />
+      
+        <!-- Bottom Border Path -->
+        <path d="M2.5 297.337C3.21763 297.292 4.07672 297.24 5.073 297.18C8.50252 296.974 13.5579 296.682 20.066 296.336C33.0822 295.644 51.91 294.737 75.1648 293.876C121.673 292.155 185.895 290.617 256.754 291.353C398.352 292.825 566.854 303.376 673.311 339.885C754.115 367.597 787.639 428.654 818.004 483.957C819.209 486.151 820.409 488.336 821.606 490.51C837.351 519.087 852.635 545.555 873.668 565.052C894.583 584.44 921.272 597.008 960.032 597.5C998.779 597.992 1025.61 585.918 1046.74 566.723C1068 547.414 1083.59 520.826 1099.65 492C1101 489.573 1102.36 487.13 1103.72 484.677C1134.57 429.058 1168.73 367.479 1249.19 339.885C1355.65 303.376 1523.52 292.825 1664.5 291.353C1735.04 290.617 1798.95 292.155 1845.23 293.876C1868.36 294.737 1887.09 295.644 1900.04 296.336C1906.52 296.682 1911.54 296.974 1914.96 297.18C1915.94 297.239 1916.79 297.292 1917.5 297.336" 
+              stroke="#00FFE9" stroke-width="5" fill="none" />
+      </svg>
+      
+
+    <!-- Arrow Button -->
+    <div id="toggleBtn" class="toggle-btn"></div>
+  </nav>
+
+  <div class="project-button">
+    <a href="projects.html">BACK</a>
+  </div>
+
+  <div class="subject-rect">
+    <h1>Project Blade Runner</h1>
+  </div>
+
+<!-- Card -->
+<section class="projects-info-card">
+    <div class="project-container">
+      <div class="project-intro">
+        <div class="project-img">
+          <img src="img/bladerunner.png" alt="Thimo's Picture">
+        </div>
+        <p class="project-text">
+          To get to know Blender I had to make scene from the movie "Blade Runner 2049". <br>
+          The movie is known for its stunning scenes, that are pleasant to look at. <br>
+          So I had to pick a scene that I thought, I could recreate in Blender. <br>
+          Also I had to use different renders styles: Eevee and Cycles.
+        </p>
+      </div>
+  
+      <!-- First iteration Section -->
+      <div class="project-section">
+        <h2>First Iteration</h2>
+        <p class="text-explain">
+            My first idea was to recreate a scene where there was some wate above the glas in the ceiling, that is reflecting on the walls. <br>
+            So tried to build it in Blender, I made the whole building to make it look like the scene.
+        </p>
+        <div class="project-img">
+            <img src="img/bladerunner_scene_water.png" id="mid-img3" alt="scene movie 1">
+        </div>
+        <div class="project-img">
+            <img src="img//version1_bladrun_thimo_S3_media.png" id="mid-img3" alt="scene movie 1 Blender">
+        </div>
+        <p class="text-explain">
+            But then I came at the water part, I searched on google and YouTube how to display the reflections on the walls <br> 
+            But after doing research and trying it by myself, I encountered a problem and that is that you need raytracing to create the image that I wanted.  <br>
+            Only the sad thing is that I don’t have a video card that supports raytracing. <br>
+            So I searched for a new scene that I surely could recreate.
+        </p>
+      </div>
+  
+      <!-- Goal of project -->
+      <div class="project-section">
+        <h2>Second iteration</h2>
+        <p class="text-explain">
+            After a rough start I made a new plan and that was to make a different scene where I don't have to use the water reflections. <br>
+            I instead chose for a dark scene with some light that gives a moody vibe to it. <br>
+        </p>
+        <div class="project-img">
+            <img src="img//bladerunner2049_counter_img_thimo_S3_media.jpg" id="mid-img3" alt="scene movie 2">
+        </div>
+        <p class="text-explain">
+            For the Light I used an area light, because it was a bit closer to the scene on the picture and set the light level to 5000 W.  <br>
+            The color of the light is orange/yellow and turned it dark.
+        </p>
+        <div class="project-img">
+            <img src="img//version2_light_bladrun_thimo_S3_media.png" id="mid-img3" alt="scene movie 2 blender">
+        </div>
+        <p class="text-explain">
+            I adjusted the camera settings and put it in the spot like on the first picture I was planning to recreate.
+        </p>
+        <div class="project-img">
+            <img src="img/version2_bladrun_thimo_S3_media.png" id="mid-img3" alt="scene movie 2 blender">
+        </div>
+      </div>
+
+      <!-- Render with Cycles -->
+      <div class="project-section">
+        <h2>Render with Cycles</h2>
+        <div class="project-img">
+            <img src="img/bladerunner.png" id="mid-img2" alt="scene movie 2 rendered with Cycles">
+        </div>
+        <h2>Render with Eevee</h2>
+        <div class="project-img">
+            <img src="img/render_Eevee_bladrun_thimo_S3_media.png" id="mid-img2" alt="scene movie 2 rendered with Eevee">
+        </div>
+        <p class="text-explain">
+            The difference between Eevee and Cycles is that Cycles also calculate all the rays of light that reflects in the image this takes some time. <br> 
+            On the other hand Eevee use direct lighting it doesn’t calculate all the rays of light. <br>
+            Rendering is Eevee is significantly shorter. <br>
+            Here you can see the same image rendered with Eevee.
+        </p>
+      </div>
+
+      <div class="project-section" >
+        <h2>Photoshop</h2>
+        <p class="text-explain">
+            I wanted my lighting in some areas to be a bit darker, so I used Photoshop for some last touches to the image. <br>
+            I used the burn tool in Photoshop and set my brush size to around 200 pixels to did some darkening under the dark counter to make it look darker, I also made the light in the top right a bit darker. <br>
+            Here you can see the final result:
+        </p>
+        <div class="project-img">
+            <img src="img//bladerunner_scene_photoshop_image_thimo_S3_media.jpg" id="mid-img3" alt="scene movie 2 rendered with Eevee">
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer -->
+  <footer class = "footer-all" id = "footerAll">
+    <ul class = "button-round"><a href="index.html">HOME</a>
+      <hr>
+    </ul>
+    <ul class = "button-round"><a href="about.html">ABOUT</a>
+      <hr>
+      <li class = "button"> <a href="about.html#eduSec">EDUCATION</a></li>
+      <li class = "button"><a href="about.html#workSec">WORK EXPERIENCE</a></li>
+      <li class = "button"><a href="about.html#skillSec">SKILLS</a></li>
+    </ul>
+    <ul class = "button-round"><a href="projects.html">PROJECTS</a>
+      <hr>
+      <li class = "button"> <a href="project1.html">CALCULATOR</a></li>
+      <li class = "button"><a href="project2.html">WELEAFWASTE</a></li>
+      <li class = "button"><a href="project3.html">BLADE RUNNER</a></li>
+      <li class = "button"><a href="project4.html">SUMMER RUSH</a></li>
+    </ul>
+    <ul class = "button-round"><a href="contact.html">CONTACTS</a>
+      <hr>
+      <li class = "button"> <a href="contact.html#personal">CONTACT ME</a></li>
+      <li class = "button"><a href="contact.html#school">SCHOOL CONTACT</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
